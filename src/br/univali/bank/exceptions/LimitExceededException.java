@@ -1,4 +1,4 @@
 package br.univali.bank.exceptions;
 
-public class LimitExcedeedException {
+public class LimitExceededException {
 }
