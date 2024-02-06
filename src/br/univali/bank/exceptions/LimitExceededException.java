@@ -1,4 +1,4 @@
 package br.univali.bank.exceptions;
 
-public class LimitExceededException extends Exception {
-}
+// Exceção lançada quando uma operação ultrapassa os limites permitidos.
+public class LimitExceededException extends Exception { }
