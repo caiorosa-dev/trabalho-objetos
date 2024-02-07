@@ -9,37 +9,38 @@ import java.util.List;
 public class CustomerService {
 
     public void addCustomer(Customer customer){
-        customer = new client;
         //Adiciona um novo cliente ao sistema.
     };
 
     public void updateCustomer(Customer customer){
-        customer customized;
-        System.out.print(updateCustomer);
         //Atualiza as informações do cliente no sistema.
     };
 
     public void deleteCustomer(Customer customer){
-        Delete(customer);
         //Remove um cliente do sistema.
     };
 
-    public void getCustomerByID(String customerID){
+    public Customer getCustomerByID(String customerID){
         //Retorna um cliente pelo ID especificado.
+
+        return null;
     };
 
-    public void getAllCustomers(){
-        List <Customer>;
+    public List<Customer> getAllCustomers(){
         //Retorna uma lista de todos os clientes no sistema.
+
+        return null;
     };
 
-    public void getCustomerAccounts(Customer customer){
-        List<Account>;
+    public List<Account> getCustomerAccounts(Customer customer){
         //Retorna uma lista das contas associadas ao cliente especificado.
-    };
 
-    public void getCustomerTransactions(Customer customer){
-        List<Transaction>;
+        return null;
+    }
+
+    public List<Transaction> getCustomerTransactions(Customer customer){
         //Retorna uma lista das últimas transações realizadas pelo cliente especificado.
+
+        return null;
     };
 }
