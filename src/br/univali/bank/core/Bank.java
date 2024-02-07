@@ -15,6 +15,7 @@ public class Bank {
     public List<Transaction> getTransactions(){
         return transactions;
     }
+
     public void addAccount(Account account){
         accounts.add(account);
     }
