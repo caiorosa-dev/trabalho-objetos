@@ -1,11 +1,17 @@
 package br.univali.bank.services;
 
 import br.univali.bank.core.Account;
+import br.univali.bank.core.Bank;
 import br.univali.bank.core.Transaction;
 
 import java.util.List;
 
 public class AccountService {
+    private final Bank bank;
+
+    public AccountService(Bank bank) {
+        this.bank = bank;
+    }
 
     public void deposit (Account account, double amount){
         //Realiza um depósito na conta especificada.

@@ -1,12 +1,18 @@
 package br.univali.bank.services;
 
 import br.univali.bank.core.Account;
+import br.univali.bank.core.Bank;
 import br.univali.bank.core.Transaction;
 import br.univali.bank.customers.Customer;
 
 import java.util.List;
 
 public class CustomerService {
+    private final Bank bank;
+
+    public CustomerService(Bank bank) {
+        this.bank = bank;
+    }
 
     public void addCustomer(Customer customer){
         //Adiciona um novo cliente ao sistema.
