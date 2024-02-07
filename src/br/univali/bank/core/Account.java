@@ -8,11 +8,18 @@ import br.univali.bank.exceptions.NotAllowedExceededException;
 public class Account {
 
     private AccountType accountType;
-
     private String accountNumber;
     private double balance;
     private AccountHolder owner;
     private boolean isAdmin = false;
+
+    public Account(AccountType accountType, String accountNumber, double balance, AccountHolder owner, boolean isAdmin) {
+        this.accountType = accountType;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.owner = owner;
+        this.isAdmin = isAdmin;
+    }
 
     public void deposit(double amount) {
         this.balance += amount;
